@@ -1,0 +1,21 @@
+{
+    "name": "kaiopiola/seo",
+    "description": "SEO Generator",
+    "type": "package",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Kaiopiola\\Seo\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Kaio Piola",
+            "email": "kaio.piola@hotmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0"
+    },
+    "minimum-stability": "dev"
+}
