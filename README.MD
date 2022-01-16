@@ -9,7 +9,7 @@
 The SEO plugin is a simple HTML SEO generator for your website.
 The plugin is able to generate meta tags like the example below:
 
-```
+``` html
     <title>PAGE TITLE</title>
     <meta name="description" content="PAGE DESCRIPTION">
     <meta name="keywords" content="TAG 1, TAG 2, ANOTHER TAG">
