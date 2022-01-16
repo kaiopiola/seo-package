@@ -1,4 +1,7 @@
 # SEO
+<a target="_blank" href="https://packagist.org/packages/kaiopiola/seo" ><img src="https://img.shields.io/packagist/dt/kaiopiola/seo?color=%2300FFF" /></a>
+<a target="_blank" href="https://packagist.org/packages/kaiopiola/seo" ><img src="https://img.shields.io/packagist/v/kaiopiola/seo?color=%23888888&label=version" /></a>
+<a target="_blank" href="https://packagist.org/packages/kaiopiola/seo" ><img src="https://img.shields.io/packagist/php-v/kaiopiola/seo" /></a>
 
 ## <img src="https://raw.githubusercontent.com/yammadev/flag-icons/master/svg/US.svg"> en-US
 ***This plugin is under development and may exhibit unexpected behavior while using it, please report any bugs or errors you find when using this solution, so that we can make it the best possible for your use!***
@@ -24,6 +27,20 @@ The plugin is able to generate meta tags like the example below:
     <meta property="twitter:image" content="" />
     <meta property="twitter:url" content="http://yourwebsite.com/example" />
     <meta property="twitter:card" content="summary" />
+```
+
+## Installation
+
+Fisrt, run the following command in your project:
+
+``` console
+composer require kaiopiola/seo
+```
+
+Then, call the main class on the PHP file you want to load it:
+
+``` php
+use Kaiopiola\Seo\Seo;
 ```
 
 ## How SEO plugin works
