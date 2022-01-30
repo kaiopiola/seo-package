@@ -54,31 +54,37 @@ To setup the SEO plugin, just instantiate the class in a variable, and then defi
 $seo = new Seo;
 
 # Setting parameters:
-$seo->set("title", "PAGE TITLE"); // Page title
-$seo->set("description", "PAGE DESCRIPTION"); // Page description
-$seo->set("tags", "TAG 1, TAG 2, ANOTHER TAG"); // Page keywords
-$seo->set("image", "IMAGE URL"); // Main image to represent current page
-$seo->set("locale", "LOCALE"); // Will use current detected locale if not set
-$seo->set("url", "PAGE URL"); // Will use current page URL if not set
-$seo->set("canonical", "CANONICAL URL"); // Will use "url" if not set
+$seo->setMeta("title", "PAGE TITLE"); // Page title
+$seo->setMeta("description", "PAGE DESCRIPTION"); // Page description
+$seo->setMeta("tags", "TAG 1, TAG 2, ANOTHER TAG"); // Page keywords
+$seo->setMeta("image", "IMAGE URL"); // Main image to represent current page
+$seo->setMeta("locale", "LOCALE"); // Will use current detected locale if not set
+$seo->setMeta("url", "PAGE URL"); // Will use current page URL if not set
+$seo->setMeta("canonical", "CANONICAL URL"); // Will use "url" if not set
 
 # Optional - Facebook OpenGraph Settings
 
-$seo->set("og_title", "OG TITLE"); // Will use "title" if not set
-$seo->set("og_type", "OG TYPE"); // NULL if not set. Please check OpenGraph docs to fill this field
-$seo->set("og_site_name", "OG SITENAME"); // OpenGraph site name. NULL if not set
-$seo->set("og_url", "OG CANONICAL URL"); // OpenGraph canonical URL, will use "url" if not set
-$seo->set("og_image", "OG IMAGE URL"); // Will use "image" if not set
-$seo->set("og_description", "OG DESCRIPTION"); // Will use "description" if not set
-$seo->set("og_locale", "OG LOCALE"); // Will use "locale" if not set
+$seo->setMeta("og_title", "OG TITLE"); // Will use "title" if not set
+$seo->setMeta("og_type", "OG TYPE"); // NULL if not set. Please check OpenGraph docs to fill this field
+$seo->setMeta("og_site_name", "OG SITENAME"); // OpenGraph site name. NULL if not set
+$seo->setMeta("og_url", "OG CANONICAL URL"); // OpenGraph canonical URL, will use "url" if not set
+$seo->setMeta("og_image", "OG IMAGE URL"); // Will use "image" if not set
+$seo->setMeta("og_description", "OG DESCRIPTION"); // Will use "description" if not set
+$seo->setMeta("og_locale", "OG LOCALE"); // Will use "locale" if not set
+
+// You can also set Open Graph values automatically, according to main Setting parameters, as below:
+$seo->autoSetOpengraph();
 
 # Optional - Twitter Settings
 
-$seo->set("twitter_title", "TWITTER TITLE"); // Will use "title" if not set
-$seo->set("twitter_description", "TWITTER DESCRIPTION"); // Will use "description" if not set
-$seo->set("twitter_image", "TWITTER IMAGE URL"); // Will use "image" if not set
-$seo->set("twitter_url", "TWIITER CANONICAL URL"); // Twitter canonical URL, will use "url" if not set
-$seo->set("twitter_card", "TWITTER CARD TYPE"); // Twitter Card type, will use SUMMARY by default if not set
+$seo->setMeta("twitter_title", "TWITTER TITLE"); // Will use "title" if not set
+$seo->setMeta("twitter_description", "TWITTER DESCRIPTION"); // Will use "description" if not set
+$seo->setMeta("twitter_image", "TWITTER IMAGE URL"); // Will use "image" if not set
+$seo->setMeta("twitter_url", "TWIITER CANONICAL URL"); // Twitter canonical URL, will use "url" if not set
+$seo->setMeta("twitter_card", "TWITTER CARD TYPE"); // Twitter Card type, will use SUMMARY by default if not set
+
+// You can also set Twitter values automatically, according to main Setting parameters, as below:
+$seo->autoSetTwitter();
 
 # Render the values
 $seo->render();
